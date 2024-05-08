@@ -1,5 +1,6 @@
 #contenitoreSfondo-bottomGreen{
     height: auto;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     background-color: none;
@@ -8,6 +9,4 @@
 #sfondo-bottomGreen{
     width: 100%;
     height: auto;
-    position: absolute;
-    bottom: 0;
 }

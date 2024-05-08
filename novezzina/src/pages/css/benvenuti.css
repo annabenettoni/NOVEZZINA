@@ -1,28 +1,80 @@
-.body{
-    height: 100vh;
+.body-benvenuti{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     background-color: #fff2e1;
-    /* overflow: hidden; */
+    position: fixed;
 }
 
 #logo-benvenuti{
+    width: 100%;
     display: flex;
     justify-content: center;
     padding-top: 10%;
 }
 
 #logoSize-benvenuti{
-    width: 40%;
+    width: 35%;
+}
+
+#scritta{
+    text-anchor: 180deg;
+    transform: rotate(0deg);
 }
 
 #fiorelloPosition-benvenuti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    z-index: 1;
-    position: absolute;
-    padding-top: 30%;
+    z-index: 2;
     display: flex;
     justify-content: center;
+    height: auto;
+}
+
+#positionInizia-benvenuti{
+    width: 100%;
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#styleInizia-benvenuti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #90CD43;
+    height: 5%;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#fontInizia-benvenuti{
+    color: white;
+    font-size: 20px;
+}
+
+#bottom-benvenuti{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#salvavita-benvenuti{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
