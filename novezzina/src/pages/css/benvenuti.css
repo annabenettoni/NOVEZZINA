@@ -1,6 +1,28 @@
 .body{
-    /* height: auto; */
+    height: 100vh;
+    width: 100%;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    background-color: #fff2e1;
+    /* overflow: hidden; */
+}
+
+#logo-benvenuti{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+#logoSize-benvenuti{
+    width: 40%;
+}
+
+#fiorelloPosition-benvenuti{
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    padding-top: 30%;
+    display: flex;
+    justify-content: center;
 }

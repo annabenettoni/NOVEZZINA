@@ -2,6 +2,7 @@
     height: auto;
     display: flex;
     justify-content: flex-end;
+    background-color: none;
 }
 
 #sfondo-bottomGreen{
