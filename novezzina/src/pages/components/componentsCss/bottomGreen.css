@@ -1,0 +1,12 @@
+#contenitoreSfondo-bottomGreen{
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#sfondo-bottomGreen{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
