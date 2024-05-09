@@ -1,5 +1,4 @@
 import './componentsCss/vignetta.css';
-import BottomGreen from './bottomGreen';
 import { ReactComponent as Baloon } from "../../img/baloon.svg";
 
 
@@ -15,11 +14,6 @@ function Vignetta({ testo, img: animale }) {
             <div id='posizioneImg-vignetta'>
                 <img src={animale} alt="animale" />
             </div>
-
-            <div id='bottom-vignetta'>
-                <BottomGreen></BottomGreen>
-            </div>
-
         </div>
     )
 }

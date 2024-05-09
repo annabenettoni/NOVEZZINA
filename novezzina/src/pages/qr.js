@@ -1,3 +1,4 @@
+import './css/qr.css';
 import React, { Component } from 'react';
 import QrReader from 'react-qr-scanner';
 import { Link } from 'react-router-dom';
@@ -16,6 +17,8 @@ class QrContainer extends Component {
   }
 
   handleScan(result) {
+
+    console.log(result)
     if (result && (result.text.includes('id=ATV'))) {
       const qrNumber = result.text.slice(-4);
       if (qrNumber !== this.state.qrData) {
@@ -25,7 +28,7 @@ class QrContainer extends Component {
       }
     } else if (result && result.text.includes('https://stops.atv')) {
       setTimeout(() => {
-        this.setState({ error: "Scannerizza il codice QR del bus" });
+        this.setState({ error: "Scannerizza il codice QR" });
       }, 1000);
     } else {
       setTimeout(() => {
@@ -41,36 +44,6 @@ class QrContainer extends Component {
     console.error('Errore nella scansione:', err);
   }
 
-//   async sendDataToBackend() {
-//     console.log(this.state)
-//     try {
-//       const { locationData, qrData } = this.state;
-//       const token = localStorage.getItem('token');
-
-//       if (locationData && qrData && token) {
-//         const startCoordinates = `${locationData.latitude},${locationData.longitude}`;
-//         const response = await axios.post('http://localhost:8080/ego/routes/addRoute', {
-//           startCoordinates: startCoordinates,
-//           qrData: qrData
-//         }, {
-//           headers: {
-//             'Content-Type': 'application/json',
-//             'Authorization': `Bearer ${token}`
-//           },
-//           withCredentials: true
-//         });
-
-//         this.props.navigate('/activeHome');
-
-//         console.log(response.data);
-//       } else {
-//         console.error('Dati del QR, della posizione o del token mancanti.');
-//       }
-//     } catch (error) {
-//       console.error('Errore:', error);
-//     }
-//   }
-
   render() {
     const { isDesktop, error } = this.state;
     const camStyle = {
@@ -82,7 +55,7 @@ class QrContainer extends Component {
       <div className='map-page1'>
 
         <div>
-            {error ? <p>{error}</p> : null}
+          {error ? <p>{error}</p> : null}
           {this.state.qrData && (
             <div className="last-four-digits"></div>
           )}
@@ -95,23 +68,20 @@ class QrContainer extends Component {
 
         {/* <p className='p1'>Se vuoi raccogliere punti ricordati di scannerizzare il QR Code che trovi sul bus: {this.state.qrData}</p> */}
 
-        <div className='scheda1'>
-          <div className='div-qr1'>
-            <QrReader
-              delay={300}
-              style={camStyle}
-              constraints={isDesktop ? undefined : { video: { facingMode: 'environment' } }}
-              onError={this.handleError}
-              onScan={this.handleScan}
-            />
-
+        <div id='tuttoooo'>
+          <div className='scheda1'>
+            <div className='div-qr1'>
+              <QrReader
+                delay={300}
+                style={camStyle}
+                constraints={isDesktop ? undefined : { video: { facingMode: 'environment' } }}
+                onError={this.handleError}
+                onScan={this.handleScan}
+              />
+            </div>
           </div>
-
         </div>
 
-        {/* <div className='geolocalisation'>
-          <LocationComponent></LocationComponent>
-        </div> */}
 
       </div>
     );
