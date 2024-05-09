@@ -1,0 +1,47 @@
+#descrizione-vignetta{
+    height: 350px;
+    width: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20%;
+    
+}
+
+#testo-vignetta{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+#baloon{
+    position: absolute;
+}
+
+#posizioneImg-vignetta{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    z-index: 2;
+    height: auto;
+    position: absolute;
+    margin-top: 100%;
+}
+
+#bottom-vignetta{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#salvavita-vignetta{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

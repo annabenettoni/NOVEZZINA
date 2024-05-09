@@ -1,4 +1,4 @@
-.body-benvenuti{
+.body-benvenuti {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -12,23 +12,49 @@
     position: fixed;
 }
 
-#logo-benvenuti{
+#logo-benvenuti {
     width: 100%;
     display: flex;
     justify-content: center;
     padding-top: 10%;
 }
 
-#logoSize-benvenuti{
+#logoSize-benvenuti {
     width: 35%;
 }
 
-#scritta{
-    text-anchor: 180deg;
-    transform: rotate(0deg);
+#titolo-benvenuti {
+    display: flex;
+    width: 100%;
+    /* Regola la larghezza del contenitore curvo */
+    height: 100px;
+    /* Regola l'altezza del contenitore curvo */
+    shape-outside: circle(60%);
+    /* Forma del contenitore curvo (in questo caso, un cerchio) */
+    fill: black;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
 }
 
-#fiorelloPosition-benvenuti{
+#svg-benvenuti {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#scritta {
+    font-size: 400px;
+    border-radius: 50%;
+}
+
+path {
+    stroke: transparent;
+}
+
+#fiorelloPosition-benvenuti {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +65,7 @@
     height: auto;
 }
 
-#positionInizia-benvenuti{
+#positionInizia-benvenuti {
     width: 100%;
     margin-bottom: 0;
     position: absolute;
@@ -48,7 +74,7 @@
     justify-content: center;
 }
 
-#styleInizia-benvenuti{
+#styleInizia-benvenuti {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,21 +83,25 @@
     width: 45%;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    font-style: none;
+    text-decoration: none;
+
 }
 
-#fontInizia-benvenuti{
+#fontInizia-benvenuti {
     color: white;
     font-size: 20px;
+    text-decoration: none;
 }
 
-#bottom-benvenuti{
+#bottom-benvenuti {
     height: auto;
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-#salvavita-benvenuti{
+#salvavita-benvenuti {
     height: 100%;
     width: 100%;
     display: flex;
