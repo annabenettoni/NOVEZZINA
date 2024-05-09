@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-#styleAvanti-spiegazione{
+#styleAvanti-spiegazione-indietro{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +15,23 @@
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
     position: absolute;
     margin-top: 185%;
+    margin-right: 23vh;
+    z-index: 3;
+}
+
+#styleAvanti-spiegazione-avanti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #90CD43;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    margin-top: 185%;
+    margin-left: 23vh;
+    z-index: 3;
+
 }
 
 #fontAvanti-spiegazione{
