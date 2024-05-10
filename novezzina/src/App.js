@@ -12,6 +12,7 @@ import Scoiattolo from './pages/scoiattolo';
 import Bruco from './pages/bruco';
 import Mucca from './pages/mucca';
 import Qr from './pages/qr';
+import Fine from './pages/fine';
 
 
 const router = createBrowserRouter([
@@ -26,8 +27,8 @@ const router = createBrowserRouter([
   { path: '/serpente', element: <Serpente /> },
   { path: '/scoiattolo', element: <Scoiattolo /> },
   { path: '/bruco', element: <Bruco /> },
-  { path: '/mucca', element: <Mucca /> }
-
+  { path: '/mucca', element: <Mucca /> },
+  { path: '/fine', element: <Fine /> }
 ]);
 
 function App() {

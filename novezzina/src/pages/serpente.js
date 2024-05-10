@@ -7,7 +7,6 @@ function Serpente() {
     const testi = [
         "Ciao signori, come ssssstate? Sapete, qui potete trovare tante specie vegetali considerate velenose, anche se mai quanto me! Scherzavo!",
         "Queste piante sono molto più velenose, alcune anche mortali, altre invece contengono sostanze irritanti che possono causare reazioni cutanee al contatto.",
-        "Non è una sensazione molto bella, ve lo assicuro!",
         "Però in compenso qua accanto ci sono delle piante meno velenose, oserei dire quasi commestibili… Ops! Forse non avrei dovuto dirvelo!",
         "Comunque se andate da quelle parti state attenti allo scoiattolo. Non è pericoloso, è solo un po’ chiacchierone.",
     ];

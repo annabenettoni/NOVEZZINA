@@ -9,7 +9,8 @@ function Mucca() {
         "Sapete, queste piante sono come delle superstar nel mondo vegetale, un po’ come la sottoscritta! ",
         "Queste piante sono così speciali perché hanno un superpotere segreto che le rende incredibilmente utili per la natura e per noi!",
         "Sono capaci di crescere in tutti i climi, dai più freddi a quelli tropicali, dalle pareti rocciose alle spiagge marine.",
-    ];
+        "Ora che avete tanta conoscenza delle piante, divertitevi a continaure ad eplorare, s'è fatta na certa",
+    ];  
 
     const [indiceTestoCorrente, setIndiceTestoCorrente] = useState(0);
 
@@ -21,8 +22,8 @@ function Mucca() {
     useEffect(() => {
         // Controlla se siamo all'ultimo testo
         if (indiceTestoCorrente === testi.length - 1) {
-            // Se siamo all'ultimo testo, reindirizza alla pagina "qr.js"
-            // history.push('/qr.js');
+            // Se siamo all'ultimo testo, reindirizza alla pagina successiva
+            window.location.href = '/fine'; // Sostituisci '/pagina-successiva' con il percorso desiderato
         }
     }, [indiceTestoCorrente, testi.length]);
 
@@ -38,4 +39,4 @@ function Mucca() {
     );
 }
 
-export default (Mucca);
+export default Mucca;

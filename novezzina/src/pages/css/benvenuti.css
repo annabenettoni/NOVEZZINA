@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
 
+
 .body-benvenuti {
     display: flex;
     flex-direction: column;
@@ -108,4 +109,8 @@ path {
     width: 100%;
     display: flex;
     flex-direction: column;
+}
+
+font{
+    font-size: xx-large;
 }

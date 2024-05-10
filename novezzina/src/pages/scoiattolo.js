@@ -5,12 +5,11 @@ import ScoiattoloImg from '../img/scoiattoloImg.svg';
 
 function Scoiattolo() {
     const testi = [
-        "WEE, BELLA GENTE! Chi siete? Da dove venite? Ma che ci fate qui! Ma che belli che siete! Ma sapete che era da un po’ che non mi venivano a trovare, che bello che felice.",
-        "L’altro giorno ho litigato con il serpente perché parlo troppo, ma non penso sia vero, è solo invidioso perché riesco a fare amicizia con tutti.",
+        "WEE, BELLA GENTE! Chi siete? Da dove venite? E che ci fate qui! Era da un po’ che non mi venivano a trovare, che bello sono davvero felice.",
         "Avete visto quanto cibo? Ho sempre ammirato la gente di montagna perché sanno sempre far tesoro delle risorse che ci offre la natura.",
-        "Sanno cogliere ed utilizzare i frutti selvatici e sanno coltivare benissimo qualsiasi cosa! Siete proprio spaziali voi umani!",
+        // "Sanno cogliere ed utilizzare i frutti selvatici e sanno coltivare benissimo qualsiasi cosa! Siete proprio spaziali voi umani!",
         "Io sono veramente ghiotto di ghiande, ma tutto quello che viene coltivato è buono! Castagne, noci, nocciole, E TUTTO IL RESTO!",
-        "In ogni caso, se volete continuare la vostra avventura, qua vicino ci sono specie endemiche, rare e preziose, che contribuiscono alla ricchezza ecologica di questo ambiente. Potreste trovare il mio amico bruco ad accogliervi. Sarà felice di vedervi!",
+        "Se volete continuare la vostra avventura, qua vicino troverete le specie endemiche, ed il mio amico bruco sarà felice di vedervi!",
     ];
 
     const [indiceTestoCorrente, setIndiceTestoCorrente] = useState(0);
