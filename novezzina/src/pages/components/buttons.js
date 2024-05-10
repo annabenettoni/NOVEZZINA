@@ -32,8 +32,8 @@ function Buttons({ testi, indiceTestoCorrente, setIndiceTestoCorrente }) {
                 style={{
                     cursor: 'pointer',
                     width: "45%",
-                    textAlign: "center",
-                    display: indiceTestoCorrente === 0 ? 'none' : 'block',
+                    backgroundColor: '#cd7943',
+                    display: indiceTestoCorrente === 0 ? 'none' : 'flex',
                 }}
             >
                 <h4 id='fontAvanti-spiegazione'>INDIETRO</h4>
