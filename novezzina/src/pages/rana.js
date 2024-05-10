@@ -5,7 +5,7 @@ import Buttons from './components/buttons';
 
 function Rana() {
     const testi = [
-        "Cra-cra! Ciao belli! Avete visto che bello stagno? Sono uno specchio d’acqua, come piccoli mondi a parte, pieni di vita e di segreti da scoprire.",
+        "Cra-cra! Ciao belli!:) Avete visto che bello stagno? Sono uno specchio d’acqua, come piccoli mondi a parte, pieni di vita e di segreti da scoprire.",
         "Sapete, negli stagni vivono un sacco di creature interessanti! Ci sono le rane, come me, che passano le giornate a crogiolarsi al sole o a cacciare insetti tra le piante acquatiche.",
         // "Poi ci sono le libellule che svolazzano sopra l'acqua con le loro ali colorate, e i pesci che nuotano tra le alghe. E non dimentichiamoci delle piante acquatiche! Gli stagni sono pieni dipiante come le ninfee e i giunchi, che forniscono cibo e rifugio per gli animali che ci vivono.",
         "Fate attenzione ragazzi! Dovete guardarci i piedi mentre vi avventurate tra tutte queste piante perché alcune sono velenose, e c’è anche un animale strisciante in particolare che si aggira nei paraggi.",

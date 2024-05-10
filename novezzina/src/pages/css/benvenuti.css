@@ -29,19 +29,6 @@
     width: 35%;
 }
 
-#titolo-benvenuti {
-    display: flex;
-    width: 100%;
-    /* Regola la larghezza del contenitore curvo */
-    height: 100px;
-    /* Regola l'altezza del contenitore curvo */
-    shape-outside: circle(60%);
-    /* Forma del contenitore curvo (in questo caso, un cerchio) */
-    fill: black;
-    background-color: transparent;
-    align-items: center;
-    justify-content: center;
-}
 
 #svg-benvenuti {
     width: 100%;
@@ -110,7 +97,7 @@ path {
     display: flex;
     flex-direction: column;
 }
-
-font{
-    font-size: xx-large;
+#fontInizia-benvenuti {
+    /* Stile del testo INIZIA */
+    font-size: 24px; /* Imposta la dimensione del font desiderata */
 }
