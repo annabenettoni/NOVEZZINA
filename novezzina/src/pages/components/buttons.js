@@ -16,7 +16,7 @@ function Buttons({ testi, indiceTestoCorrente, setIndiceTestoCorrente }) {
 
     function cambiaTestoAvanti() {
         if (indiceTestoCorrente === testi.length - 1) {
-            // Se siamo sull'ultima pagina, reindirizza a /scansiona
+            // Se siamo sull'ultimo testo, reindirizza a /scansione
             window.location.href = "/qr";
         } else {
             setIndiceTestoCorrente((prevIndice) => prevIndice + 1);
@@ -31,6 +31,8 @@ function Buttons({ testi, indiceTestoCorrente, setIndiceTestoCorrente }) {
                 style={{
                     cursor: 'pointer',
                     width: "45%",
+                    textAlign: "center",
+                    display: indiceTestoCorrente === 0 ? 'none' : 'block',
                 }}
             >
                 <h4 id='fontAvanti-spiegazione'>INDIETRO</h4>
@@ -44,9 +46,11 @@ function Buttons({ testi, indiceTestoCorrente, setIndiceTestoCorrente }) {
                     width: "45%",
                 }}
             >
-                <h4 id='fontAvanti-spiegazione'>AVANTI</h4>
+                <h4 id='fontAvanti-spiegazione'>{indiceTestoCorrente === testi.length - 1 ? 'SCANSIONA QR ' : 'AVANTI'}</h4>
             </div>
+            
         </>
+
     )
 }
 
