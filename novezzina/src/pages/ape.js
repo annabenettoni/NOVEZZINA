@@ -11,7 +11,8 @@ function Ape() {
         "Qui potete trovare alcuni dei miei fiori preferiti: le rose! Qui avrete la fortuna di vedere come le rose sono cambiate nel tempo e guardare ai fiori selvatici che crescono sul Monte Baldo!",
         "Potete scoprire i tipi speciali di rose che vengono coltivati per renderci felici con i loro bei colori e aiutarci a stare meglio quando siamo tristi.",
         "Come sapete, noi api ci affidiamo alla natura per mantenere la nostra salute, ma ora ho bisogno del vostro aiuto…",
-        "Penso di aver impollinato un po’ troppi fiori e sono molto stanca, potete aiutarmi con qualche rimedio naturale? Vi prego, datemi una mano, perché senza di me l'intero regno delle api potrebbe essere in pericolo."
+        "Penso di aver impollinato un po’ troppi fiori e sono molto stanca, potete aiutarmi con qualche rimedio naturale? Potete provare a chiedere alla saggia volpe, vi saprà dar consiglio",
+        "Vi prego, datemi una mano, perché senza di me l'intero regno delle api potrebbe essere in pericolo."
     ];
 
     const [indiceTestoCorrente, setIndiceTestoCorrente] = useState(0);
