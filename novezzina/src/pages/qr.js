@@ -3,10 +3,11 @@ import { ReactComponent as Logo } from "../img/logo.svg";
 import React, { Component } from 'react';
 // import QrReader from 'react-qr-scanner';
 import { Scanner } from '@yudiel/react-qr-scanner';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 // import axios from 'axios';
 
 function Qr() {
+  const navigate = useNavigate();
 
   return(
   <div className='map-page1'>
@@ -29,7 +30,7 @@ function Qr() {
       {/* <p className='p1'>Se vuoi raccogliere punti ricordati di scannerizzare il QR Code che trovi sul bus: {this.state.qrData}</p> */}
 
       <div id='tuttoooo'>
-        <div className='scheda1'>
+        <div className='scheda1 classe-test'>
           {/* <div className='div-qr1'> */}
             {/* <QrReader
             delay={300}
@@ -39,7 +40,7 @@ function Qr() {
             onScan={this.handleScan}
             /> */}
             <Scanner
-              onResult={(text, result) => console.log("ON RESULT", text, result)}
+              onResult={(text, result) => { window.location.href = text; console.log("ON RESULT", text, result)}}
               onError={(error) => console.log("ON ERROR", error?.message)}
             />
           {/* </div> */}
