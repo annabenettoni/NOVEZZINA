@@ -3,10 +3,11 @@ import { ReactComponent as Logo } from "../img/logo.svg";
 import React, { Component } from 'react';
 // import QrReader from 'react-qr-scanner';
 import { Scanner } from '@yudiel/react-qr-scanner';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 // import axios from 'axios';
 
 function Qr() {
+  const navigate = useNavigate();
 
   return(
   <div className='map-page1'>
@@ -39,7 +40,7 @@ function Qr() {
             onScan={this.handleScan}
             /> */}
             <Scanner
-              onResult={(text, result) => console.log("ON RESULT", text, result)}
+              onResult={(text, result) => { window.location.href = text; console.log("ON RESULT", text, result)}}
               onError={(error) => console.log("ON ERROR", error?.message)}
             />
           {/* </div> */}
