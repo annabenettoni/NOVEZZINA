@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './css/ape.css';
 import Vignetta from './components/vignetta';
 import ApeImg from '../img/apeImg.svg';
+import Buttons from './components/buttons';
 // import  withRouter  from 'react-router-dom'; // Importa il modulo withRouter per ottenere history come prop
 
 function Ape() {
@@ -31,20 +32,11 @@ function Ape() {
     return (
         <div id='position-spiegazione'>
             <Vignetta
-                img={ ApeImg }
+                img={ApeImg}
                 testo={testi[indiceTestoCorrente]}
                 id="testo"
             />
-            <div
-                id='styleAvanti-spiegazione'
-                onClick={cambiaTesto}
-                style={{
-                    cursor: 'pointer',
-                    width: "45%", // Adatta la larghezza al contenuto
-                }}
-            >
-                <h4 id='fontAvanti-spiegazione'>AVANTI</h4>
-            </div>
+            <Buttons testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
         </div>
     );
 }

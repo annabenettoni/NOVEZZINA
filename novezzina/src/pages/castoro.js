@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Vignetta from './components/vignetta';
 import CastoroImg from '../img/castoroImg.svg';
+import Buttons from './components/buttons';
 
 function Castoro() {
     const testi = [
@@ -32,16 +33,7 @@ function Castoro() {
                 testo={testi[indiceTestoCorrente]}
                 id="testo"
             />
-            <div
-                id='styleAvanti-spiegazione'
-                onClick={cambiaTesto}
-                style={{
-                    cursor: 'pointer',
-                    width: "45%", // Adatta la larghezza al contenuto
-                }}
-            >
-                <h4 id='fontAvanti-spiegazione'>AVANTI</h4>
-            </div>
+            <Buttons testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
         </div>
     );
 }

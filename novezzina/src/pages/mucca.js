@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Vignetta from './components/vignetta';
-import RanaImg from '../img/ranaImg.svg';
+import Buttons from './components/buttons';
+import MuccaImg from '../img/muccaImg.svg';
 
-function Rana() {
+function Mucca() {
     const testi = [
-        "Cra-cra! Ciao belli!",
-        "Avete visto lo stagno? Li trovi veramente molto affascinanti, sono come uno specchio d’acqua, o sbaglio? Sono come piccoli mondi a parte, pieni di vita e di segreti da scoprire.",
-        "Sapete, negli stagni vivono un sacco di creature interessanti! Ci sono le rane, come me, che passano le giornate a crogiolarsi al sole o a cacciare insetti tra le piante acquatiche.",
-        "Poi ci sono le libellule che svolazzano sopra l'acqua con le loro ali colorate, e i pesci che nuotano tra le alghe. E non dimentichiamoci delle piante acquatiche! Gli stagni sono pieni dipiante come le ninfee e i giunchi, che forniscono cibo e rifugio per gli animali che ci vivono.",
-        "Fate attenzione ragazzi! Dovete guardarci i piedi mentre vi avventurate tra tutte queste piante perché alcune sono velenose, e c’è anche un animale strisciante in particolare che si aggira nei paraggi.",
+        "MUUU ragazzi, come ve la passate? Ormai avete incontrato tutti i miei amici ma la parte migliore comincia adesso, perché ci sono io!",
+        "Sapete, queste piante sono come delle superstar nel mondo vegetale, un po’ come la sottoscritta! ",
+        "Queste piante sono così speciali perché hanno un superpotere segreto che le rende incredibilmente utili per la natura e per noi!",
+        "Sono capaci di crescere in tutti i climi, dai più freddi a quelli tropicali, dalle pareti rocciose alle spiagge marine.",
     ];
 
     const [indiceTestoCorrente, setIndiceTestoCorrente] = useState(0);
@@ -29,22 +29,13 @@ function Rana() {
     return (
         <div id='position-spiegazione'>
             <Vignetta
-                img={RanaImg}
+                img={MuccaImg}
                 testo={testi[indiceTestoCorrente]}
                 id="testo"
             />
-            <div
-                id='styleAvanti-spiegazione'
-                onClick={cambiaTesto}
-                style={{
-                    cursor: 'pointer',
-                    width: "45%", // Adatta la larghezza al contenuto
-                }}
-            >
-                <h4 id='fontAvanti-spiegazione'>AVANTI</h4>
-            </div>
+           <Buttons testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
         </div>
     );
 }
 
-export default (Rana);
+export default (Mucca);

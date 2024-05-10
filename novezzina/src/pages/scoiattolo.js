@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Vignetta from './components/vignetta';
-import RanaImg from '../img/ranaImg.svg';
+import Buttons from './components/buttons';
+import ScoiattoloImg from '../img/scoiattoloImg.svg';
 
-function Rana() {
+function Scoiattolo() {
     const testi = [
-        "Cra-cra! Ciao belli!",
-        "Avete visto lo stagno? Li trovi veramente molto affascinanti, sono come uno specchio d’acqua, o sbaglio? Sono come piccoli mondi a parte, pieni di vita e di segreti da scoprire.",
-        "Sapete, negli stagni vivono un sacco di creature interessanti! Ci sono le rane, come me, che passano le giornate a crogiolarsi al sole o a cacciare insetti tra le piante acquatiche.",
-        "Poi ci sono le libellule che svolazzano sopra l'acqua con le loro ali colorate, e i pesci che nuotano tra le alghe. E non dimentichiamoci delle piante acquatiche! Gli stagni sono pieni dipiante come le ninfee e i giunchi, che forniscono cibo e rifugio per gli animali che ci vivono.",
-        "Fate attenzione ragazzi! Dovete guardarci i piedi mentre vi avventurate tra tutte queste piante perché alcune sono velenose, e c’è anche un animale strisciante in particolare che si aggira nei paraggi.",
+        "WEE, BELLA GENTE! Chi siete? Da dove venite? Ma che ci fate qui! Ma che belli che siete! Ma sapete che era da un po’ che non mi venivano a trovare, che bello che felice.",
+        "L’altro giorno ho litigato con il serpente perché parlo troppo, ma non penso sia vero, è solo invidioso perché riesco a fare amicizia con tutti.",
+        "Avete visto quanto cibo? Ho sempre ammirato la gente di montagna perché sanno sempre far tesoro delle risorse che ci offre la natura.",
+        "Sanno cogliere ed utilizzare i frutti selvatici e sanno coltivare benissimo qualsiasi cosa! Siete proprio spaziali voi umani!",
+        "Io sono veramente ghiotto di ghiande, ma tutto quello che viene coltivato è buono! Castagne, noci, nocciole, E TUTTO IL RESTO!",
+        "In ogni caso, se volete continuare la vostra avventura, qua vicino ci sono specie endemiche, rare e preziose, che contribuiscono alla ricchezza ecologica di questo ambiente. Potreste trovare il mio amico bruco ad accogliervi. Sarà felice di vedervi!",
     ];
 
     const [indiceTestoCorrente, setIndiceTestoCorrente] = useState(0);
@@ -29,22 +31,14 @@ function Rana() {
     return (
         <div id='position-spiegazione'>
             <Vignetta
-                img={RanaImg}
+                img={ScoiattoloImg}
                 testo={testi[indiceTestoCorrente]}
                 id="testo"
             />
-            <div
-                id='styleAvanti-spiegazione'
-                onClick={cambiaTesto}
-                style={{
-                    cursor: 'pointer',
-                    width: "45%", // Adatta la larghezza al contenuto
-                }}
-            >
-                <h4 id='fontAvanti-spiegazione'>AVANTI</h4>
-            </div>
+            <Buttons testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
+
         </div>
     );
 }
 
-export default (Rana);
+export default (Scoiattolo);
