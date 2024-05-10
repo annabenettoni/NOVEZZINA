@@ -1,19 +1,13 @@
-.body-vignetta{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    align-items: center;
-    height: 85dvh;
-}
+/*VISUALE MOBILE DA PC*/
 
 #descrizione-vignetta{
-    height: 60%;
+    height: 350px;
     width: auto;
     display: flex;
     justify-content: left;
     align-items: center;
     margin-top: 20%;
-    
+    font-size: 20px;
 }
 
 #testo-vignetta{
@@ -32,9 +26,11 @@
 #posizioneImg-vignetta{
     display: flex;
     justify-content: right;
-    width: auto;
+    width: 100%;
     z-index: 2;
-    height: 40%;
+    height: auto;
+    position: absolute;
+    margin-top: 100%;
 }
 
 #bottom-vignetta{
@@ -51,3 +47,11 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+/*VISUALE MOBILE DA IPHONE*/
+
+@media only screen and (max-width: 414px) {
+    #posizioneImg-vignetta{
+        margin-top: 80%;
+    }
+  }

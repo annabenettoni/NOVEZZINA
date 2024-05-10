@@ -12,33 +12,48 @@ export default function Benvenuti() {
             <div id='logo-benvenuti'>
                 <Logo id='logoSize-benvenuti'></Logo>
             </div>
-            <div id='salvavita-benvenuti'>
-
-                <div id='primaParte-benvenuti'>
-                    <div id='titolo-benvenuti'>
-                        <svg id='svg-benvenuti'>
-                            <text id='titolo-benvenuti'>
-                                <textPath xlinkHref="#scritta">Avventura nell'Orto Botanico</textPath>
-                            </text>
-                            <path id="scritta" d="M 105 100 A 140 140 0 0 1 290 100" fill="transparent" />
-                        </svg>
-                    </div>
-                    <div id='fiorelloPosition-benvenuti'>
-                        <Fiorello></Fiorello>
-                    </div>
-                </div>
-
-                <div id='secondaParte-benvenuti'>
-                    <div id='positionInizia-benvenuti'>
-                        <div id='styleInizia-benvenuti'>
-                            <Link to={'/spiegazione'}>
-                                <h4 id='fontInizia-benvenuti'>INIZIA</h4>
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-
+            <div id='fiorelloPosition-benvenuti'>
+                <Fiorello></Fiorello>
             </div>
+            <div className='position-tasto'>
+                <Link to={'/spiegazione'}>
+                    <span id='fontInizia-benvenuti'>INIZIA</span>
+                </Link>
+            </div>
+
         </div>
+
+
+
+
+
+
+
+        // <div id='salvavita-benvenuti'>
+
+        //     <div id='primaParte-benvenuti'>
+        //         <div id='titolo-benvenuti'>
+        //             <svg id='svg-benvenuti'>
+        //                 <text id='titolo-benvenuti'>
+        //                     <textPath xlinkHref="#scritta">Avventura nell'Orto Botanico</textPath>
+        //                 </text>
+        //                 <path id="scritta" d="M 105 100 A 140 140 0 0 1 290 100" fill="transparent" />
+        //             </svg>
+        //         </div>
+        //         <div id='fiorelloPosition-benvenuti'>
+        //             <Fiorello></Fiorello>
+        //         </div>
+        //     </div>
+
+        //     <div id='secondaParte-benvenuti'>
+        //         <div id='positionInizia-benvenuti'>
+        //             <div id='styleInizia-benvenuti'>
+        //                 <Link to={'/spiegazione'}>
+        //                     <h4 id='fontInizia-benvenuti'>INIZIA</h4>
+        //                 </Link>
+        //             </div>
+        //         </div>
+        //     </div>
+        // </div>
     )
 }

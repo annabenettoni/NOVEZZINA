@@ -4,7 +4,7 @@ import { ReactComponent as Baloon } from "../../img/baloon.svg";
 
 function Vignetta({ testo, img: animale }) {
     return (
-        <div className='body-vignetta'>
+        <div id='salvavita-vignetta'>
             <div id='descrizione-vignetta'>
                 <Baloon id='baloon'></Baloon>
                 <div id='testo-vignetta'>

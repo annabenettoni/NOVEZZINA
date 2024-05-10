@@ -32,7 +32,7 @@ function Ape() {
     }, [indiceTestoCorrente, testi.length]);
 
     return (
-        <div className='position-spiegazione'>
+        <div id='position-spiegazione'>
             <Vignetta
                 img={ApeImg}
                 testo={testi[indiceTestoCorrente]}

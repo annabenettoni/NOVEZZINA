@@ -1,9 +1,15 @@
-.position-spiegazione{
+body{
+    background-image: url('../../img/sfondo.svg');
+    background-size: cover;
+
+}
+
+
+#position-spiegazione{
+    width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
+    align-items: flex-end;
 }
 
 #styleAvanti-spiegazione{
@@ -11,20 +17,14 @@
     justify-content: center;
     align-items: center;
     background-color: #90CD43;
-    width: 45%;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
-    position: absolute;
-    z-index: 3;
-    margin-top: 185%;
+    font-style: none;
+    text-decoration: none;
+    width: 100%;
 }
 
 #fontAvanti-spiegazione{
     color: white;
     font-size: 20px;
 }
-/* 
-#testo{
-    position: absolute;
-    z-index: 100;
-} */

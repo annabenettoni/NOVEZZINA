@@ -1,0 +1,11 @@
+.body-fine {
+    background: url(../../img/fine.svg) no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/*VISUALE MOBILE DA IPHONE*/
+
+@media only screen and (max-width: 414px) {
+    
+}
