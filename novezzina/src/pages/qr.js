@@ -39,6 +39,7 @@ function Qr() {
             onError={this.handleError}
             onScan={this.handleScan}
             /> */}
+            {/* PUSH DELLE 23:29 */}
             <Scanner
               onResult={(text, result) => { window.location.href = text; console.log("ON RESULT", text, result)}}
               onError={(error) => console.log("ON ERROR", error?.message)}
