@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './css/spiegazione.css';
 import Vignetta from './components/vignetta';
 import Buttons from './components/buttons';
-import HappyFiorello from '../img/happyFiorello.svg';
+import HappyFiorelloMeta from '../img/happyFiorelloMeta.svg';
 
 export default function Spiegazione() {
     const testi = [
@@ -12,15 +12,16 @@ export default function Spiegazione() {
         // "Regola numero tre: divertitevi! Questa è un'avventura pensata per farvi sorridere, ridere e imparare. Non abbiate paura di esplorare e lasciatevi sorprendere dalla bellezza che vi circonda.",
         "Ora che conoscete le regole del gioco, è tempo di metterle in pratica! Seguite il profumo dolce delle rose che si diffonde nell'aria, la mia carissima amica gialla e nera sarà pronta ad aspettarvi. Buona fortuna e che l'avventura abbia inizio!"
     ];
+
     const [indiceTestoCorrente, setIndiceTestoCorrente] = useState(0);
 
 
 
-//massimo puzza 
+
     return (
         <div id='position-spiegazione'>
             <Vignetta
-                img={HappyFiorello}
+                img={HappyFiorelloMeta}
                 testo={testi[indiceTestoCorrente]}
                 id="testo"
             />

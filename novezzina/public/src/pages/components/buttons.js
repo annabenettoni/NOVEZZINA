@@ -25,9 +25,8 @@ function Buttons({ testi, indiceTestoCorrente, setIndiceTestoCorrente }) {
 
     return (
         <>
-        <div className='bottoni-buttons'>
             <div
-                id='styleAvanti-spiegazione-avanti'
+                id='styleAvanti-spiegazione-indietro'
                 onClick={cambiaTestoIndietro}
                 style={{
                     cursor: 'pointer',
@@ -36,6 +35,7 @@ function Buttons({ testi, indiceTestoCorrente, setIndiceTestoCorrente }) {
             >
                 <h4 id='fontAvanti-spiegazione'>INDIETRO</h4>
             </div>
+
             <div
                 id='styleAvanti-spiegazione-avanti'
                 onClick={cambiaTestoAvanti}
@@ -46,7 +46,6 @@ function Buttons({ testi, indiceTestoCorrente, setIndiceTestoCorrente }) {
             >
                 <h4 id='fontAvanti-spiegazione'>AVANTI</h4>
             </div>
-        </div>
         </>
     )
 }

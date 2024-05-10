@@ -1,12 +1,11 @@
-.bottoni-buttons{
+#position-spiegazione{
+    width: auto;
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 15dvh;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
 }
 
-#styleAvanti-spiegazione-avanti{
+#styleAvanti-spiegazione{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,8 +13,12 @@
     width: 45%;
     border-radius: 10px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
-    /* position: absolute; */
-    /* margin-top: 185%; */
+    position: absolute;
     z-index: 3;
+    margin-top: 185%;
+}
 
+#fontAvanti-spiegazione{
+    color: white;
+    font-size: 20px;
 }
