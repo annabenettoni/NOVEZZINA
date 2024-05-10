@@ -30,7 +30,7 @@ function Qr() {
       {/* <p className='p1'>Se vuoi raccogliere punti ricordati di scannerizzare il QR Code che trovi sul bus: {this.state.qrData}</p> */}
 
       <div id='tuttoooo'>
-        <div className='scheda1'>
+        <div className='scheda1 classe-test'>
           {/* <div className='div-qr1'> */}
             {/* <QrReader
             delay={300}
@@ -39,7 +39,6 @@ function Qr() {
             onError={this.handleError}
             onScan={this.handleScan}
             /> */}
-            {/* PUSH DELLE 23:29 */}
             <Scanner
               onResult={(text, result) => { window.location.href = text; console.log("ON RESULT", text, result)}}
               onError={(error) => console.log("ON ERROR", error?.message)}
