@@ -3,6 +3,7 @@ import './css/spiegazione.css';
 import Vignetta from './components/vignetta';
 import HappyFiorelloMeta from '../img/happyFiorelloMeta.svg';
 
+<Banner/>
 export default function Spiegazione() {
     const testi = [
         "Ciao piccoli esploratori! Io sono Fiorello e sono qui per darvi il benvenuto in questa avventura emozionante! Siete pronti a mettere alla prova le vostre abilità? Ora vi dirò poche e semplici regole da seguire, INIZIAMO!",
@@ -32,6 +33,7 @@ export default function Spiegazione() {
                 img={HappyFiorelloMeta}
                 testo={testi[indiceTestoCorrente]}
                 id="testo"
+<<<<<<< Updated upstream
             />
                         <div
                 id='styleAvanti-spiegazione-indietro'
@@ -54,6 +56,10 @@ export default function Spiegazione() {
             >
                 <h4 id='fontAvanti-spiegazione'>AVANTI</h4>
             </div>
+=======
+            /> 
+            <Buttons testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
+>>>>>>> Stashed changes
         </div>
     );
 }
