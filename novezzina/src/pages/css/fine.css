@@ -1,4 +1,7 @@
 .body-fine {
     background-image: url('../../img/fine.svg');
-    background-size: cover;
+    background-size:cover;
+    /* height: 100vh; */
+    /* width: 100%; */
+
 }
