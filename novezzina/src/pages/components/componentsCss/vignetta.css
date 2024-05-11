@@ -4,11 +4,12 @@
     /* justify-content: space-between; */
     align-items: center;
     height: 85dvh;
+    /* border: 3px solid palevioletred; */
 }
 
 #descrizione-vignetta{
     height: 60%;
-    width: auto;
+    width: 80%;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -23,10 +24,12 @@
     align-items: center;
     justify-content: center;
     padding: 0 5%;
+    /* border: 1px solid red; */
 }
 
 #baloon{
     position: absolute;
+    /* border: 1px solid green; */
 }
 
 #posizioneImg-vignetta{
