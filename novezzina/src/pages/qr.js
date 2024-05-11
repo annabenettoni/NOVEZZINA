@@ -56,7 +56,7 @@ function Qr() {
               onResult={(text, result) => console.log("ON RESULT", text, result)}
               onError={(error) => console.log("ON ERROR", error?.message)}
             />
-            <div className="got-to-next-dialog" style={{display: showDialog ? 'block' : 'none'}}>
+            <div className="got-to-next-dialog test" style={{display: showDialog ? 'block' : 'none'}}>
               <span>Non riesci a scansionare il QR code?</span>
               <a href={"/" + (animale ? animale : 'spiegazione')}>Vai al prossimo animale</a>
             </div>
