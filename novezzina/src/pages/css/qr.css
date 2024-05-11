@@ -98,6 +98,32 @@ body{
     border-radius: 12px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     padding: 1% 4%;
+    position: relative;
+}
+
+.got-to-next-dialog {
+    position: absolute;
+    background-color: white;
+    width: 75%;
+    bottom: -70px;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+    text-align: center;
+}
+
+.got-to-next-dialog span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.got-to-next-dialog a {
+    display: block;
+    padding: 10px 20px;
+    background: #6c9067;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
 }
 
 .div-qr1{

@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'; // Importa Link da react-router-dom
 
 
-function Buttons({ testi, indiceTestoCorrente, setIndiceTestoCorrente }) {
+function Buttons({ testi, indiceTestoCorrente, setIndiceTestoCorrente, animale = '' }) {
 
     function cambiaTestoIndietro() {
         if (indiceTestoCorrente === 0) {
@@ -17,7 +17,7 @@ function Buttons({ testi, indiceTestoCorrente, setIndiceTestoCorrente }) {
     function cambiaTestoAvanti() {
         if (indiceTestoCorrente === testi.length - 1) {
             // Se siamo sull'ultimo testo, reindirizza a /scansione
-            window.location.href = "/qr";
+            window.location.href = "/qr?animale=" + animale;
         } else {
             setIndiceTestoCorrente((prevIndice) => prevIndice + 1);
         }

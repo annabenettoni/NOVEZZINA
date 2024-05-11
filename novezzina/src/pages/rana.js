@@ -33,7 +33,7 @@ function Rana() {
                 testo={testi[indiceTestoCorrente]}
                 id="testo"
             />
-            <Buttons testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
+            <Buttons animale="serpente" testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
         </div>
     );
 }

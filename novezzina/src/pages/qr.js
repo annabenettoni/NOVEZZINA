@@ -1,12 +1,26 @@
 import './css/qr.css';
 import { ReactComponent as Logo } from "../img/logo.svg";
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 // import QrReader from 'react-qr-scanner';
 import { Scanner } from '@yudiel/react-qr-scanner';
 import { Link } from 'react-router-dom';
 // import axios from 'axios';
 
 function Qr() {
+  const [animale, setAnimale] = useState('');
+  const [showDialog, setShowDialog] = useState(false);
+
+  useEffect(() => {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const animaleParam = urlParams.get('animale');
+    setAnimale(animaleParam);
+
+    setTimeout(() => {
+      setShowDialog(true);
+    }, 5000);
+
+  }, []);
 
   return(
   <div className='map-page1'>
@@ -42,6 +56,10 @@ function Qr() {
               onResult={(text, result) => console.log("ON RESULT", text, result)}
               onError={(error) => console.log("ON ERROR", error?.message)}
             />
+            <div className="got-to-next-dialog" style={{display: showDialog ? 'block' : 'none'}}>
+              <span>Non riesci a scansionare il QR code?</span>
+              <a href={"/" + animale}>Vai al prossimo animale</a>
+            </div>
           {/* </div> */}
         </div>
       </div>

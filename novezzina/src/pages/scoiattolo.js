@@ -34,7 +34,7 @@ function Scoiattolo() {
                 testo={testi[indiceTestoCorrente]}
                 id="testo"
             />
-            <Buttons testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
+            <Buttons animale="bruco" testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
 
         </div>
     );

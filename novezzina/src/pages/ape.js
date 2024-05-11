@@ -38,7 +38,7 @@ function Ape() {
                 testo={testi[indiceTestoCorrente]}
                 id="testo"
             />
-            <Buttons testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
+            <Buttons animale="volpe" testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
         </div>
     );
 }

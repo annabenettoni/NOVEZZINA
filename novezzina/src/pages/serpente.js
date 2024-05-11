@@ -33,7 +33,7 @@ function Serpente() {
                 testo={testi[indiceTestoCorrente]}
                 id="testo"
             />
-              <Buttons testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
+              <Buttons animale="scoiattolo" testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
         </div>
     );
 }

@@ -33,7 +33,7 @@ function Bruco() {
                 testo={testi[indiceTestoCorrente]}
                 id="testo"
             />
-           <Buttons testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
+           <Buttons animale="mucca" testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
         </div>
     );
 }

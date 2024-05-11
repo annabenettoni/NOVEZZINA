@@ -33,7 +33,7 @@ function Farfalla() {
                 testo={testi[indiceTestoCorrente]}
                 id="testo"
             />
-            <Buttons testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
+            <Buttons animale="castoro" testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
         </div>
     );
 }

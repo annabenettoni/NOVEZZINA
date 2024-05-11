@@ -24,7 +24,7 @@ export default function Spiegazione() {
                 testo={testi[indiceTestoCorrente]}
                 id="testo"
             />
-            <Buttons testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
+            <Buttons animale="ape" testi={testi} indiceTestoCorrente={indiceTestoCorrente} setIndiceTestoCorrente={setIndiceTestoCorrente} />
         </div>
     );
 }
