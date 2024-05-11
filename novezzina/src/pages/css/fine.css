@@ -1,5 +1,38 @@
 .body-fine {
-    background: url(../../img/fine.svg) no-repeat center center fixed;
+    /* background: url(../../img/fine.svg) no-repeat center center fixed;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 100vh; */
+    height: 100dvh;
+    width: 100%;
+}
+
+.body-fine img {
+    width: 100%;
+    position: fixed;
+    bottom: -10px;
+    left: 0;
+    z-index: 10;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    width: 60px;
+    aspect-ratio: 2;
+    --_g: no-repeat radial-gradient(circle closest-side,#90CD43 90%,#0000);
+    background: 
+      var(--_g) 0%   50%,
+      var(--_g) 50%  50%,
+      var(--_g) 100% 50%;
+    background-size: calc(100%/3) 50%;
+    animation: l3 1s infinite linear;
+  }
+  @keyframes l3 {
+      20%{background-position:0%   0%, 50%  50%,100%  50%}
+      40%{background-position:0% 100%, 50%   0%,100%  50%}
+      60%{background-position:0%  50%, 50% 100%,100%   0%}
+      80%{background-position:0%  50%, 50%  50%,100% 100%}
 }
