@@ -53,7 +53,7 @@ function Qr() {
             onScan={this.handleScan}
             /> */}
             <Scanner
-              onResult={(text, result) => console.log("ON RESULT", text, result)}
+              onResult={(text, result) => { window.location.href = text; console.log("ON RESULT", text, result)}}
               onError={(error) => console.log("ON ERROR", error?.message)}
             />
             <div className="got-to-next-dialog test" style={{display: showDialog ? 'block' : 'none'}}>
