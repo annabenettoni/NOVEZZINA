@@ -58,7 +58,7 @@ function Qr() {
             />
             <div className="got-to-next-dialog" style={{display: showDialog ? 'block' : 'none'}}>
               <span>Non riesci a scansionare il QR code?</span>
-              <a href={"/" + animale}>Vai al prossimo animale</a>
+              <a href={"/" + (animale ? animale : 'spiegazione')}>Vai al prossimo animale</a>
             </div>
           {/* </div> */}
         </div>
