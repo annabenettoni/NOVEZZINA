@@ -43,7 +43,7 @@ function Qr() {
       {/* <p className='p1'>Se vuoi raccogliere punti ricordati di scannerizzare il QR Code che trovi sul bus: {this.state.qrData}</p> */}
 
       <div id='tuttoooo'>
-        <div className='scheda1'>
+        <div className='scheda1 test'>
           {/* <div className='div-qr1'> */}
             {/* <QrReader
             delay={300}
