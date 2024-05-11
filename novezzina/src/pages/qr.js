@@ -43,7 +43,7 @@ function Qr() {
       {/* <p className='p1'>Se vuoi raccogliere punti ricordati di scannerizzare il QR Code che trovi sul bus: {this.state.qrData}</p> */}
 
       <div id='tuttoooo'>
-        <div className='scheda1'>
+        <div className='scheda1 test'>
           {/* <div className='div-qr1'> */}
             {/* <QrReader
             delay={300}
@@ -56,7 +56,7 @@ function Qr() {
               onResult={(text, result) => { window.location.href = text; console.log("ON RESULT", text, result)}}
               onError={(error) => console.log("ON ERROR", error?.message)}
             />
-            <div className="got-to-next-dialog test" style={{display: showDialog ? 'block' : 'none'}}>
+            <div className="got-to-next-dialog" style={{display: showDialog ? 'block' : 'none'}}>
               <span>Non riesci a scansionare il QR code?</span>
               <a href={"/" + (animale ? animale : 'spiegazione')}>Vai al prossimo animale</a>
             </div>
